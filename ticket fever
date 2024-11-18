@@ -1,0 +1,13 @@
+x=int(input())
+l=[]
+for i in range(x):
+    a,b=map(int,input().split())
+    l.append(a)
+    l.append(b)
+for i in range(len(l)):
+    if(i%2!=0):
+        continue
+    elif(l[i]<=l[i+1]):
+        print('0')
+    else:
+        print(abs(l[i+1]-l[i]))
