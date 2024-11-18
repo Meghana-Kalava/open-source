@@ -1,0 +1,8 @@
+x,y=map(int,input().split())
+l=list(map(int,input().split()))
+d=nd=0
+for i in range(x):
+    if l[i]%y==0:
+        d+=l[i]
+    else: nd+=l[i]
+print(d-nd)
