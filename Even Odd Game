@@ -1,0 +1,4 @@
+n=input().strip()
+s=sum(int(i)for i in n)
+if s%2==0:print("Vignesh")
+else:print("Charan")
