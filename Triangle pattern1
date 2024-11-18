@@ -1,0 +1,5 @@
+n=int(input())
+c=1
+for i in range(1,n+1):
+    print(' '.join(str(c+j)for j in range(i)))
+    c+=i
