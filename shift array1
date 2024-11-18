@@ -1,0 +1,7 @@
+n=int(input())
+x=list(map(int,input().split()))
+temp=x[0]
+for i in range(len(x)-1):
+    x[i]=x[i+1]
+x[-1]=temp
+print(*x)
