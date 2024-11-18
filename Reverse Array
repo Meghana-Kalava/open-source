@@ -1,0 +1,9 @@
+x=int(input().strip())
+s=list(map(int,input().split()))
+n=len(s)
+'''print(s[::-1])'''
+for i in range((len(s)//2)):
+    t=s[i]
+    s[i]=s[n-i-1]
+    s[n-i-1]=t
+print(*s)
